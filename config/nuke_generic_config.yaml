@@ -1,6 +1,9 @@
 regions:
   # add `global` here to include IAM entities to be nuked
-  - TARGET_REGION # will be overridden during run time based on region parameter
+  - us-east-2 # will be overridden during run time based on region parameter
+
+accounts:
+  - "419350349624": {}
 
 account-blocklist:
 - 123456789012 #prod
