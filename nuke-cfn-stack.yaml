@@ -442,7 +442,7 @@ Resources:
     Properties:
       Name: !Sub EventBridgeNukeSchedule-${AWS::StackName}
       Description: Scheduled Event for running AWS Nuke on the target accounts within the specified regions
-      ScheduleExpression: cron(0 7 ? * * *)
+      ScheduleExpression: cron(0 2 ? * * *)
       State:  ENABLED
       RoleArn: !GetAtt EventBridgeNukeScheduleRole.Arn
       # Update the tags for this manually as the property is not available for all targets
